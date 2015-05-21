@@ -1,0 +1,10 @@
+---
+layout:     post
+title:      "第一条测试博客"
+date:       2015-05-21 21:40:00
+author:     "程照原"
+header-img: "img/post-bg-02.jpg"
+---
+
+
+<p>Placeholder text by <a href="http://spaceipsum.com/">Space Ipsum</a>. Photographs by <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>.</p>
