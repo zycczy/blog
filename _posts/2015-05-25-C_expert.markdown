@@ -7,6 +7,7 @@ header-img: "img/home-bg.jpg"
 ---
 #《Expert C Programming》之 segments
 　　在linux编程中很容易出现一种错误叫做“segments fault”，也就是常见的段错误，昨天在看《Expert C Programming》的时候，在书中的第6章很细致的讲了“segments”的细节，所以今天专门写一篇blog记录一下。
+
 　　首先先要了解一下Object file(对象文件)的三个种类：
 
     (1)Relocatable file 可重定位文件:
