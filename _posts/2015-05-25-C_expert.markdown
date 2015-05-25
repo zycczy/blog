@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "<Expert C Programming> 之 segments"
+title:      "＜Expert C Programming＞ 之 segments"
 date:       2015-05-25 12:25:00
 author:     "程照原"
 header-img: "img/home-bg.jpg"
