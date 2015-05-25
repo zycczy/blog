@@ -11,7 +11,6 @@ header-img: "img/home-bg.jpg"
 　　首先先要了解一下Object file(对象文件)的三个种类：
 
     (1)Relocatable file 可重定位文件:
-
     　　一般为以.o结尾的由汇编器(如GAS)汇编生成的文件，
     
 
