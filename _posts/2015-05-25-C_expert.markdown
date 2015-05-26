@@ -11,7 +11,7 @@ header-img: "img/home-bg.jpg"
 　　首先先要了解一下Object file(对象文件)的三个种类：
 
     (1)Relocatable file 可重定位文件:
-    　　一般为以.o结尾的由汇编器(如GAS)汇编生成的文件，
-    
+    　　一般为以.o结尾的由汇编器(如GAS)汇编生成的文件，之后link editor拿一个或多个Relocatable Object file做为输入，经链接处理之后，生成一个Excuteable file或者一个Shared object file。当然也可以用ar工具来将众多的Relocatable file生成.a静态链接库。在内核中加载的.ko模块也是Relocatable file。
+    (2) 
 
 
