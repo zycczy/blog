@@ -18,6 +18,7 @@ header-img: "img/home-bg.jpg"
     　　这就是常说到的动态链接库，.so文件。如果拿前面的静态库来生成可执行程序，那每个程序都会有一份库代码的拷贝。如果在磁盘中存储这些可执行程序，那就会占用额外的磁盘空间，如果放入Linux系统上一起运行，也会浪费掉物理内存。如果将静态库换成动态库，那么这些问题都不会出现。动态库在发挥作用的过程当中，必须经过如下两个步骤：
     　　a)link editor(链接编辑器)拿它和其他Relocatable object file以及其他的Shared object file作为输入，经链接处理后，生成另外的shared object file或者executable file。
     　　b)在运行时，dynamic linker(动态链接器)拿它和一个Executable file以及另外一些Shared objet file来一起处理，在linux系统里面创建一个进程映像。
+
 　　在下面这张图片中就可以看出三个不同种类的文件了
 ![file](/blog/img/file_property.jpg)
 
