@@ -19,7 +19,7 @@ header-img: "img/home-bg.jpg"
     　　a)link editor(链接编辑器)拿它和其他Relocatable object file以及其他的Shared object file作为输入，经链接处理后，生成另外的shared object file或者executable file。
     　　b)在运行时，dynamic linker(动态链接器)拿它和一个Executable file以及另外一些Shared objet file来一起处理，在linux系统里面创建一个进程映像。
 
-　　在下面这张图片中就可以看出三个不同种类的文件了
+　　在下面这张图片中就可以看出三个不同种类的文件了，而且也可以看出x86是LSB(小端)的32位结构。
 ![file](/blog/img/file_property.jpg)
 
 
