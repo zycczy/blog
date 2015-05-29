@@ -24,6 +24,7 @@ header-img: "img/home-bg.jpg"
 　　当在一个可执行文件中运行size指令时，他会告诉你这个文件中的三个segments(text，data，bss)的大小。
 ![file](/blog/img/size.jpg)
 　　C语言的各个部分会出现在以下这些段中，需要提到的是局部变量不进入段中，他们在运行时才被创建。
+     
      magic number
      ——————————————————————————————
      其他内容
