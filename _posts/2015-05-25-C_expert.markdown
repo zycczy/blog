@@ -21,5 +21,7 @@ header-img: "img/home-bg.jpg"
 
 　　在下面这张图片中就可以看出三个不同种类的文件了，而且也可以看出x86是LSB(小端)的32位结构。
 ![file](/blog/img/file_property.jpg)
+　　当在一个可执行文件中运行size指令时，他会告诉你这个文件中的三个segments(text，data，bss)的大小。
+![file](/blog/img/size.jpg)
 
-
+　　讲到elf格式的文件不得不提到的就是a.out了，虽然a.out现在已经被elf所替代，但是unix系统里面依然保留了这种文件格式
