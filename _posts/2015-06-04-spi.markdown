@@ -8,9 +8,15 @@ header-img: "img/home-bg.jpg"
 #SPI接口的原理与驱动设计(1)
 　　SPI(Serial Peripheral Interface, 串行外设接口)是Motorala公司提出的一种同步串行数据传输标准，在很多器件中被广泛使用。
 
+###1.接口
 　　SPI接口经常被称为4线串行总线，以Master/Slave模式工作，数据传输过程由主机初始化。其使用的四条型号线分别为：
     
     1)SCLK:串行时钟，用来同步数据传输，由主机输出；
     2)MOSI:主机输出从机输入数据线；
     3)MISO:主机输入从机输出数据线；
-    4)SS/CS:片选线，低电平有效，由主机输出。
+    4)SS/CS:片选线，低电平有效，由主机输出，片选分为Independent和Cooperative模式。
+
+###2.特点
+　　
+
+　　
