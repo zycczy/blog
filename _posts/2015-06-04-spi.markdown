@@ -49,4 +49,11 @@ header-img: "img/home-bg.jpg"
     CPOL：时钟极性，表示SPI在空闲时，时钟信号是高电平还是低电平。若CPOL被设为1，那么该设备在空闲时SCK管脚下的时钟信号为高电平，当CPOL被设为0时则正好相反。
     CPHA：时钟相位，表示SPI设备是在SCK管脚上的时钟信号变为上升沿时出发数据采样，还是在时钟信号变为下降沿是出发数据采样，若CPHA被设置为1，则SPI设备在时钟信号变为下降沿时触发数据采样，在上升沿时发送数据。当被设为0是也正好相反。
 
+####(三)SSPSR
+![file](/blog/img/spi_SSPSR.jpg)
+SSPRS是SPI设备内部的移位寄存器(Shift Register)。它的主要作用是根据SCK信号状态，往SSPBUF中移入或移出数据，每次移动的数据大小有Bus-width以及Channel-Width所决定。
 
+    Bus-Width的作用是指定地址总线到Master设备之间数据传输的单位。
+    例如，如果想要往Master里面的SSPBUF写入16Byte大小的数据，首先，给Master的配置寄存器设置Bus-Width为Byte；然后，往Master设备的Tx-Data移位寄存器在地址总线的入口写入数据，每次写入1Byte大小的数据;写完1Byte数据后，Master里面的Tx-Data移位寄存器会自动把从地址总线传来的数据移入SSPBUF里；上述动作循环16次。
+
+    Channel-Width的作用是指定Master与Slave设备之间数据传输的单位，通常情况下，Bus-Width总是会大于或等于Channel-Width，这样能保证不会出现因Master与Slave之间数据交换的频率比地址总线与Master之间的数据交换频率要快，导致SSPBUF里面存放的数据为无效数据这样的情况。
