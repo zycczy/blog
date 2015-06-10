@@ -9,6 +9,7 @@ header-img: "img/home-bg.jpg"
 　　上一篇讲完了SPI接口的基本协议和寄存器，那么从这篇开始就开始讲一下驱动设计部分，我也是边看代码边写的，估计最后写完之后还要返工好多次才能真正完善吧。
 -------------------------------------------------------------------------------
 　　既然要讲驱动，那自然要从BSP层开始说起。
+
 ```c
 /* SPI Registers offsets from peripheral base address */
 #define SPI_RXDATA_REG    	    (0x300) /* rx data register */
