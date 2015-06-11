@@ -6,24 +6,15 @@ author:     "程照原"
 header-img: "img/home-bg.jpg"
 ---
 #SPI接口的原理与驱动设计(2)
+
 　　上一篇讲完了SPI接口的基本协议和寄存器，那么从这篇开始就开始讲一下驱动设计部分，我也是边看代码边写的，估计最后写完之后还要返工好多次才能真正完善吧。
+
 -------------------------------------------------------------------------------
-　　既然要讲驱动，那自然要从BSP层开始说起。
+
+　既然要讲驱动，那自然要从BSP层开始说起。
 
 ```c
-/* SPI Registers offsets from peripheral base address */
-#define SPI_RXDATA_REG    	    (0x300) /* rx data register */
-#define SPI_TXDATA_REG		    (0x200) /* tx data register */
-#define SPI_GLB_CTL_REG		    (0x04) /* control register */
-#define SPI_CTL_REG		        (0x08) /* control register */
-#define SPI_INT_CTL_REG         (0x10) /* interrupt control register */
-#define SPI_STATUS_REG	        (0x14) /* status register */
-#define SPI_DMA_CTL_REG         (0x18) /* dma control register */
-#define SPI_WAIT_REG    	    (0x20) /* wait clock counter register */
-#define SPI_CLK_RATE_REG		(0x24) /* clock rate control register */
-#define SPI_BC_REG              (0x30) /* burst counter register   */
-#define SPI_TC_REG              (0x34) /* transmit counter register */
-#define SPI_MBC_REG             (0x38)   
-#define SPI_FIFO_STA_REG        (0x1c) /* fifo status register */
-#define SPI_FIFO_CTL_REG		        (0x18) /*FIFO  control register */
+int i = 1;
 ```
+
+
