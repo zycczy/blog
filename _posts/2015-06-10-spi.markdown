@@ -12,7 +12,7 @@ header-img: "img/home-bg.jpg"
 -------------------------------------------------------------------------------
 
 　　既然要讲驱动，那自然要从BSP层开始说起。
-![file](/blog/img/spi_arch.jpg)
+![file](/blog/img/spi_bsp_0.jpg)
 　　这是
 
 
